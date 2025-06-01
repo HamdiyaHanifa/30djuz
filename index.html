@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran Ayat Display</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quran Ayat Display</h1>
+        
+        <button id="nextAyatBtn" class="btn primary-btn">Click to next AYAT</button>
+        
+        <div id="ayatDisplay" class="ayat-display"></div>
+        
+        <div class="range-selector">
+            <div class="select-container">
+                <label for="startSura">From Sura:</label>
+                <select id="startSura" class="select-box">
+                    <option value="" disabled selected>Select start sura</option>
+                </select>
+            </div>
+            
+            <div class="select-container">
+                <label for="endSura">To Sura:</label>
+                <select id="endSura" class="select-box">
+                    <option value="" disabled selected>Select end sura</option>
+                </select>
+            </div>
+        </div>
+        
+        <button id="translateBtn" class="btn secondary-btn">Translate SURA</button>
+        
+        <div id="translationDisplay" class="translation-display"></div>
+        
+        <button id="answerBtn" class="btn secondary-btn">Answer SURA</button>
+        
+        <div id="suraInfoDisplay" class="sura-info-display"></div>
+        
+    <button id="quitBtn" class="btn quit-btn">QUIT</button>
+    </div>
+
+    <script src="quran-data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
